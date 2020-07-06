@@ -1,14 +1,8 @@
 Example usage:
 ```node
-const mm = require("moneymatrix");
+const mm = require("./index");
 
-const options = {
-    "baseUrl": "api-release.moneymatrix.com",
-    "credentials": {
-        "MerchantKey": "ABCDEFGHIJKLMNOPQRSTUVWXYZ012345",
-        "MerchantId": "6789"
-    }
-}
+const options = require("./config.json");
 const moneymatrix = new mm(options);
 
 const body = {
