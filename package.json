@@ -1,14 +1,13 @@
 {
   "name": "moneymatrix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Moneymatrix API for node https://github.com/mkadirtan/moneymatrix",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^14.0.14",
     "underscore": "^1.10.2"
   }
 }

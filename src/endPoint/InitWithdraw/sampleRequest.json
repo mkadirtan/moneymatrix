@@ -1,0 +1,53 @@
+{
+  "MerchantReference": "0bdad3ae38f84c968384f404f9924233",
+  "CustomerId": "121212",
+  "FirstName": "John",
+  "LastName": "Doe",
+  "EmailAddress": "john.doe@gmail.com",
+  "CountryCode": "MT",
+  "IpAddress": "194.44.124.242",
+  "Address": "81 Botley Road",
+  "City": "MIDDLETON SCRIVEN",
+  "PhoneNumber": "(123)-456-7890",
+  "PostalCode": "79011",
+  "State": "N/A",
+  "BirthDate": "10/10/1984",
+  "PaymentMethod": null,
+  "Amount": "12.00",
+  "Currency": "EUR",
+  "SuccessUrl": "http://merchant-site.com/success.ashx",
+  "FailUrl": "http://merchant-site.com/fail.ashx",
+  "CallbackUrl": "http://merchant-site.com/notifications.ashx",
+  "CancelUrl": "http://merchant-site.com/cancel.ashx",
+  "CheckStatusUrl": "http://merchant-site.com/synch_check.ashx",
+  "Channel": "Desktop",
+  "AllowPaySolChange": true,
+  "RegistrationIpAddress": "194.44.124.242",
+  "RegistrationDate": "10/10/2016",
+  "MerchantId": 6,
+  "Signature": "V9E5MB8xRhiLZCPSSHQmC5C2IFqoTPEmGLDIF9JZaJ+GCohbMWT/ssYWWWqgoBbe4mUfB2EsSdvwGp00izRhzg==",
+  "Language": "en",
+  "MerchantInputFields": [
+    {
+      "Key": "LookupFieldKey",
+      "Name": "Lookup field",
+      "Description": "Lookup field description, hint",
+      "DefaultValue": "LookupFieldItem2Key",
+      "LookupValues": [
+        {
+          "Key": "LookupFieldItem1Key",
+          "Name": "Lookup field item 1"
+        },
+        {
+          "Key": "LookupFieldItem2Key",
+          "Name": "Lookup field item 2"
+        }
+      ]
+    },
+    {
+      "Key": "TextFieldKey",
+      "Name": "Text field",
+      "DefaultValue": "Text field default value"
+    }
+  ]
+}

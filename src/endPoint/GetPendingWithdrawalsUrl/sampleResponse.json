@@ -1,0 +1,7 @@
+{
+  "CashierUrl": "https://cashierstage.MoneyMatrix.com/GetPendingWithdrawalsUrl?nonce=c26894da27a011e8afbd323436663435001008",
+  "Signature": "RrIQP+wW2xPQdumbWmATykc26YDuukwlDI2y1H5PN/ojBkAvYZ0dtkcZhwtj3jqF6jFoAD3GYUlatzigDSy+jA==",
+  "ResponseMessage": "Success",
+  "ResponseDisplayText": "Success",
+  "ResponseCode": 1
+}

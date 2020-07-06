@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="fujisoft">
     <serverData>
       <paths name="167.86.91.188">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="fujisoft">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/usr/muhammed_test" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
