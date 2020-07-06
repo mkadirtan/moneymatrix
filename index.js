@@ -32,9 +32,19 @@ module.exports = function(options){
         return new Promise((res, rej) => {
             const postData = JSON.stringify(request);
             const opts = this.httpsOptions(url, postData);
-            const req = https.request(opts);
+            let responseData = "";
+            const req = https.request(opts, function(response){
+                response.setEncoding("utf-8");
+                response.on("data", chunk => {
+                    responseData += chunk;
+                });
+                response.on("close", () => {
+                    res(JSON.parse(responseData))
+                })
+                response.on("error", e => rej(e))
+            });
+
             req.on("error", e => rej(e));
-            req.on("response", response => res(response))
             req.write(postData);
             req.end();
         })

@@ -24,6 +24,7 @@ module.exports = function(credentials, body, signatureParams){
     })
     //End with MerchantKey
     signatureData += MerchantKey
+    console.log(signatureData);
     const bytes = Buffer.from(signatureData, "utf-8");
     // Hash the signature with HMAC-SHA512 Algorithm
     hmac.write(bytes);
