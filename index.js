@@ -4,8 +4,8 @@ const endPoint = require("./src/endPoint");
 
 module.exports = function(options){
     const { credentials, baseUrl } = options;
-    this.createRequest = function(url, body){
-        const req = endPoint(url).createRequest(credentials, body);
+    this.createBody = function(url, body, type){
+        const req = endPoint(url).createBody(credentials, body, type);
         return {
             req,
             send: () => {
@@ -13,8 +13,8 @@ module.exports = function(options){
             }
         };
     };
-    this.checkResponse = function(url, responseBody){
-        return endPoint(url).checkResponse(credentials, responseBody);
+    this.checkSignature = function(url, responseBody){
+        return endPoint(url).checkSignature(credentials, responseBody);
     }
     this.httpsOptions = function(url, postData){
         return {

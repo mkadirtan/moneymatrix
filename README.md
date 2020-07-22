@@ -15,10 +15,10 @@ const body = {
     "Amount": "12.00",
     "Currency": "TRY",
 };
-const InitWithdraw = moneymatrix.createRequest("InitWithdraw", body);
+const InitWithdraw = moneymatrix.createBody("InitWithdraw", body);
 
 InitWithdraw.send().then(response => {
-    const isAuthentic = moneymatrix.checkResponse("InitWithdraw", response);
+    const isAuthentic = moneymatrix.checkSignature("InitWithdraw", response);
     if(isAuthentic){ console.log(response) }
 }).catch(e => { console.log(e) });
 ```

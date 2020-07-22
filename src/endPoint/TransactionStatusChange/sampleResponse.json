@@ -1,0 +1,8 @@
+{
+  "Action": "CHECKTRANSACTIONSTATUS",
+  "ResponseStatus": 1,
+  "ResponseMessage": null,
+  "TransactionCode": "TRANSACTIONCODE",
+  "Status": 1,
+  "Signature":"g6hm9YeXB71nY2E7aRZ1jPsZSeAJPpDx389fU+NFuQYvg48F5h23t2wHhDjKWRcM4rF95B4eKlJZX6Ud9gR2uQ=="
+}

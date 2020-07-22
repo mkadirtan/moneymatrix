@@ -1,11 +1,11 @@
-const createRequest = require("./createRequest");
+const createBody = require("./createBody");
 const createSignature = require("./createSignature");
-const checkResponse = require("./checkResponse");
+const checkSignature = require("./checkSignature");
 const checkFields = require("./checkFields");
 
 module.exports = {
-    createRequest,
+    createBody,
     createSignature,
-    checkResponse,
+    checkSignature,
     checkFields
 }

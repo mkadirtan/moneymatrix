@@ -1,4 +1,3 @@
-const _ = require("underscore");
 const { createHmac } = require("crypto");
 
 module.exports = function(credentials, body, signatureParams){

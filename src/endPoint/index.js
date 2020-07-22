@@ -3,11 +3,17 @@ const util = require("../utilities");
 module.exports = function(url){
     const parameters = require("./" + url);
     return {
-        createRequest(credentials, body){
-            return util.createRequest(credentials, body,  parameters.request.signature, parameters.request.mandatory);
+        createBody(credentials, body, type){
+            if(type !== "request" || type !== "response"){
+                throw new Error("Invalid type, it must be 'request' or 'response'");
+            }
+            return util.createBody(credentials, body,  parameters[type].signature);
         },
-        checkResponse(credentials, response){
-            return util.checkResponse(credentials, response, parameters.response.signature, parameters.response.all);
+        checkSignature(credentials, response, type){
+            if(type !== "request" || type !== "response"){
+                throw new Error("Invalid type, it must be 'request' or 'response'");
+            }
+            return util.checkSignature(credentials, response, parameters[type].signature);
         }
     }
 }
