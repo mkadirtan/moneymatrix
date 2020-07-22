@@ -4,7 +4,7 @@ module.exports = {
         conditional: [],
         optional: [],
         signature: ["TransactionCode", "PaymentVendor", "RequestedAmount", "Currency", "Status", "ResponseCode"],
-        url: undefined, // callbackUrl
+        url: "callback", // callbackUrl
     },
     response: {
         all: ["Action", "ResponseStatus", "ResponseMessage", "Signature"],

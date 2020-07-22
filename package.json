@@ -1,6 +1,6 @@
 {
   "name": "moneymatrix",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Moneymatrix API for node https://github.com/mkadirtan/moneymatrix",
   "main": "index.js",
   "scripts": {},
