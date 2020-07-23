@@ -1,13 +1,13 @@
 module.exports = {
     request: {
-        mandatory: ["Action", "MerchantReference", "Signature"],
+        mandatory: ["Action", "MerchantReference", "PaymentVendor", "RequestedAmount", "ConfirmedAmount", "VendorRequestedAmount", "VendorConfirmedAmount", "Amount", "VendorCurrency", "Currency", "TransactionCode", "TransactionReference", "VendorReference", "Status", "ResponseCode", "ResponseMessage", "VendorCode", "VendorMessage", "Token", "AccountNumber", "PaymentAccountFields", "Signature"],
         conditional: [],
         optional: [],
-        signature: ["Action", "MerchantReference"],
-        url: "checkStatus", // checkStatusUrl
+        signature: ["TransactionCode", "PaymentVendor", "RequestedAmount", "Currency", "Status", "ResponseCode"],
+        url: "TransactionStatusCheck", // callback
     },
     response: {
-        all: ["Action", "ResponseStatus", "ResponseMessage", "TransactionCode", "Status", "Signature"],
-        signature: ["Action", "ResponseStatus", "TransactionCode", "Status"]
+        all: ["Action", "ResponseStatus", "ResponseMessage", "Signature"],
+        signature: ["Action", "ResponseStatus"]
     }
 }

@@ -1,8 +1,6 @@
 {
-  "Action": "CHECKTRANSACTIONSTATUS",
+  "Action": "DEPOSIT",
   "ResponseStatus": 1,
   "ResponseMessage": null,
-  "TransactionCode": "TRANSACTIONCODE",
-  "Status": 1,
-  "Signature":"g6hm9YeXB71nY2E7aRZ1jPsZSeAJPpDx389fU+NFuQYvg48F5h23t2wHhDjKWRcM4rF95B4eKlJZX6Ud9gR2uQ=="
+  "Signature": "N418S2rfGFsTvf3UyzWdVPjmWQ+IXt9SN2hmDZkyKGLE+FOv+zN/gQ/JGGuz UwbFgi4FEggdthkP68AP7uDeSQ=="
 }
