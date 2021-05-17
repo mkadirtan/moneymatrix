@@ -3,7 +3,7 @@ Example usage:
 const mm = require("./index");
 
 const options = require("./config.json");
-const moneymatrix = new mm(options);
+const Moneymatrix = new mm(options);
 
 const body = {
     "MerchantReference": "0bdad3ae38f84c968384f404f9924233",
@@ -15,10 +15,10 @@ const body = {
     "Amount": "12.00",
     "Currency": "TRY",
 };
-const InitWithdraw = moneymatrix.createBody("InitWithdraw", body);
+const requestData = Moneymatrix.createBody("InitWithdraw", body);
 
-InitWithdraw.send().then(response => {
-    const isAuthentic = moneymatrix.checkSignature("InitWithdraw", response);
+Moneymatrix.send().then(response => {
+    const isAuthentic = Moneymatrix.checkSignature("InitWithdraw", response);
     if(isAuthentic){ console.log(response) }
 }).catch(e => { console.log(e) });
 ```
